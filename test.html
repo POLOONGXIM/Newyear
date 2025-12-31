@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lời chúc mừng năm mới 🎉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🎊 Lời chúc mừng năm mới 🎊</h1>
+      <p>Chọn từng thành viên để xem lời chúc Tết</p>
+    </header>
+
+    <div class="container">
+      <div class="members">
+        <div class="member-card" onclick="openWish('A')">
+          Mẹ Chế và Ngoại Yêu
+        </div>
+        <div class="member-card" onclick="openWish('B')">Chị Óc</div>
+        <div class="member-card" onclick="openWish('C')">Anh An</div>
+        <div class="member-card" onclick="openWish('D')">Chị Chanh</div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <div class="wish-box">
+        <img id="wishImg" />
+        <h2 id="wishName"></h2>
+        <p id="wishText"></p>
+        <button onclick="closeWish()">Đóng</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
